@@ -1,0 +1,645 @@
+@charset "utf-8";
+
+*{
+	margin:0px; 
+	border:0px; 
+	padding:0px; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #15151E; 
+}
+.button {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+    width: 130px;
+    height: 130px;
+}
+
+#encabezado {
+    background-color: #15151E;
+    min-height: 130px;
+    position: relative; 
+}
+
+#encabezado ul {
+    position:  absolute; 
+    right: 50px;
+    top: 40px;
+    height: 20px;
+    width: auto;
+}
+
+#encabezado ul li {
+    list-style-type: none;
+	}
+
+#encabezado ul li a {
+    font-family: "Arial #1A1715", Gadget, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1715;
+    border-radius: 3px;
+}
+
+#banner{
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center center; 
+	height: 500px; 
+	background-image: url(img/banner.avif); 
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 30px;
+    background: #600f0f;         
+    border-radius: 0;         
+    padding: 25px;               
+    margin-bottom: 35px;         
+}
+
+#titulo-h2 {
+    margin-bottom: 12px;
+    color: white;
+}
+
+.card-container {
+    display: flex;               
+    gap: 20px;                   
+    flex-wrap: wrap;             
+}
+
+.card {
+    flex: 1 1 250px;             
+    background: #1A1715;         
+    border-radius: 10px;         
+    overflow: hidden;            
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(233, 69, 96, 0.3); 
+}
+
+.card-img {
+    height: 140px;               
+    background: linear-gradient(135deg, #ac2c2c, #600f0f); 
+}
+
+.card-body h3 {
+    margin-bottom: 10px;         
+    color: #8f887c;              
+}
+
+.card-body {
+    padding: 20px;               
+}
+
+.card-body p {
+    font-size: 0.9rem;           
+    color: #ccc;                 
+    line-height: 1.5;            
+}
+
+.card-body button {
+    margin-top: 15px;            
+    background: white;         
+    color: #000;                 
+    border: none;                
+    padding: 10px 20px;          
+    border-radius: 5px;          
+    cursor: pointer;             
+    font-weight: bold;           
+    transition: background 0.2s; 
+}
+
+.card-body button:hover {
+    background: #8f887c;         
+}
+
+.footer {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #1c1a17;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    padding: 12px 4px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8f887c;
+    margin-bottom: 8px;
+}
+
+.footer-column p {
+    font-size: 13px;
+    color: #d8d2c4;
+}
+
+#centro {
+    background-color: #15151E;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.cajas {
+    width: 30%;
+    background-color: #600f0f;
+    color: #FFF;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.cajas img {
+	width: 100%; 
+	height: auto; 
+	display: block; 
+	}
+
+.p-cajas {
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size: 15px; 
+	color: #FFF; 
+	text-align: left; 
+	margin-right: 10px; 
+	margin-left: 10px; 
+	line-height: 1.6; 
+}
+
+.h3-cajas {
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size: 18px; 
+	color: white; 
+	text-align: center; 
+	text-transform: uppercase;
+	margin-bottom: 15px; 
+	margin-top:15px; 
+}
+
+div:has(> #registroForm) {
+    background: #1A1715;
+    border-radius: 10px;
+    padding: 2.5rem;
+    width: calc(100% - 2rem);
+    max-width: 650px;
+    margin: 30px auto 35px;
+    line-height: 1.6;
+}
+ 
+div:has(> #registroForm) h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+ 
+div:has(> #registroForm) h1 + p {
+    text-align: center;
+    color: #8f887c;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+#registroForm * { box-sizing: border-box; }
+ 
+#registroForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+ 
+fieldset {
+    border: 2px solid #600f0f;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+ 
+fieldset:hover { border-color: #ac2c2c; }
+ 
+legend {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #d8d2c4;
+    padding: 0 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+ 
+
+legend::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ac2c2c;
+    border-radius: 50%;
+}
+ 
+fieldset > div { margin-bottom: 1.2rem; }
+fieldset > div:last-child { margin-bottom: 0; }
+ 
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #d8d2c4;
+    margin-bottom: 0.35rem;
+    cursor: pointer;
+}
+ 
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 2px solid #3a3530;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: white;
+    background: #15151E;
+    outline: none;
+}
+ 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #ac2c2c;
+    box-shadow: 0 0 0 3px rgba(172, 44, 44, 0.3);
+}
+ 
+input::placeholder {
+    color: #8f887c;
+    font-style: italic;
+}
+ 
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238f887c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+ 
+
+input[type="radio"],
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #8f887c;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+ 
+input[type="radio"] { border-radius: 50%; }
+input[type="checkbox"] { border-radius: 4px; }
+ 
+input[type="radio"]:checked {
+    border-color: #ac2c2c;
+    background: #ac2c2c;
+    box-shadow: inset 0 0 0 3px #1A1715;
+}
+ 
+input[type="checkbox"]:checked {
+    border-color: #ac2c2c;
+    background: #ac2c2c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+input[type="radio"]:hover,
+input[type="checkbox"]:hover { border-color: #ac2c2c; }
+ 
+
+fieldset > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    margin-top: 0.3rem;
+}
+ 
+fieldset > div > div label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    background: #15151E;
+    border: 1px solid transparent;
+}
+ 
+fieldset > div > div label:has(input:checked) {
+    background: #600f0f;
+    border-color: #ac2c2c;
+    color: white;
+    font-weight: 500;
+}
+ 
+
+#registroForm > div:has(input[name="terminos"]) label {
+    display: inline-flex;
+    align-items: flex-start;
+    font-weight: 400;
+}
+ 
+#registroForm > div:has(input[name="terminos"]) a {
+    color: #ac2c2c;
+    text-decoration: underline;
+    font-weight: 600;
+}
+ 
+#registroForm > div:has(input[name="terminos"]) a:hover {
+    color: white;
+    text-decoration: none;
+}
+ 
+#registroForm > div:last-child {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+#registroForm button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 250px;
+}
+ 
+#registroForm button[type="submit"] { background: #ac2c2c; color: white; }
+#registroForm button[type="submit"]:hover { background: #600f0f; transform: translateY(-2px); }
+ 
+#registroForm button[type="reset"] {
+    background: transparent;
+    color: #8f887c;
+    border: 2px solid #8f887c;
+}
+#registroForm button[type="reset"]:hover { color: white; border-color: white; transform: translateY(-2px); }
+ 
+
+input[type="text"]:valid:not(:placeholder-shown),
+input[type="email"]:valid:not(:placeholder-shown) { border-color: #22c55e; }
+input[type="text"]:invalid:not(:placeholder-shown):not(:focus),
+input[type="email"]:invalid:not(:placeholder-shown):not(:focus) { border-color: #ef4444; }
+ 
+
+:focus-visible { outline: 2px solid #ac2c2c; outline-offset: 2px; }
+ 
+
+@media (max-width: 600px) {
+    div:has(> #registroForm) { padding: 1.5rem; border-radius: 16px; }
+    div:has(> #registroForm) h1 { font-size: 1.5rem; }
+    fieldset { padding: 1rem; }
+    fieldset > div > div { flex-direction: column; gap: 0.5rem; }
+    #registroForm > div:last-child { flex-direction: column; align-items: center; }
+    #registroForm button { max-width: 100%; width: 100%; }
+}
+
+#encabezado ul li a {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#encabezado ul li a:hover {
+    background-color: #ac2c2c;
+    transform: scale(1.1);
+}
+
+#encabezado ul li a.activo {
+    background-color: #600f0f;
+    border-bottom: 3px solid #ac2c2c;
+}
+
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1A1715;
+    border-left: 6px solid #ac2c2c;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #d8d2c4;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.card-body .btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: white;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-body .btn:hover {
+    background: #8f887c;
+}
+
+.footer-column a {
+    color: #d8d2c4;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+#mensaje {
+    text-align: center;
+    color: white;
+    background-color: #600f0f;
+    border: 2px solid #ac2c2c;
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.pagina-circuitos .cajas {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pagina-circuitos .h3-cajas {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.pagina-circuitos .cajas img {
+    float: left;
+    width: 45%;
+    margin: 0 20px 10px 0;
+}
+
+.pagina-circuitos .derecha img {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.pagina-historia .cajas {
+    width: 100%;
+    overflow: hidden;
+    border-left: 5px solid #ac2c2c;
+    border-radius: 0 8px 8px 0;
+}
+
+.pagina-historia .h3-cajas {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.pagina-historia .cajas img {
+    float: left;
+    width: 340px;
+    margin: 0 30px 15px 25px;
+    border-radius: 5px;
+}
+
+.ferrari { border-top: 6px solid #dc0000; }
+.redbull { border-top: 6px solid #3671c6; }
+.mercedes { border-top: 6px solid #27f4d2; }
+.mclaren { border-top: 6px solid #ff8000; }
+.aston { border-top: 6px solid #229971; }
+.alpine { border-top: 6px solid #0093cc; }
+
+@media (max-width: 1000px) {
+    .cajas {
+        width: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    #encabezado ul {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px 15px;
+        height: auto;
+    }
+    #encabezado ul li a {
+        width: auto;
+        height: 36px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+    #banner {
+        height: 200px;
+    }
+    .pagina-circuitos .cajas img {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .pagina-historia .cajas img {
+        float: none;
+        width: 90%;
+        margin: 0 auto 15px;
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .cajas {
+        width: 90%;
+    }
+}
+
+
+.intro-carreras {
+    color: #d8d2c4;
+    margin-bottom: 20px;
+}
+
+.proximas {
+    justify-content: center;
+}
+
+.proximas .card {
+    flex: 0 1 calc(25% - 15px);
+}
+
+.proximas .card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .proximas .card {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 650px) {
+    .proximas .card {
+        flex: 0 1 100%;
+    }
+}

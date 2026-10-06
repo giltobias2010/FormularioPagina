@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registrate y contanos tus pilotos, equipos y circuitos favoritos de la Fórmula 1.">
+    <title>Formulario de registro | Fórmula 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo2.png">
+</head>
+<body>
+
+        <header>
+        <div id="encabezado">
+            <img src="img/logo_formula1.png" id="logo" alt="Logo de la Fórmula 1">
+            <nav id="menu">
+                <ul class="button">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="circuitos.html">Circuitos</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a class="activo" aria-current="page" href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <h1>Formulario de Registro</h1>
+        <p>Completa todos los campos para crear tu cuenta</p>
+
+        <form action="#" method="POST" id="registroForm">
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juan@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+            </fieldset>
+
+            <!-- Información adicional -->
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <div>
+                    <label for="pais">País *</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país...</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="ES">España</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="OTRO">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Desde cuándo mirás Fórmula 1?</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="antiguedad" value="menos1">
+                            Hace menos de 1 año
+                        </label>
+                        <label>
+                            <input type="radio" name="antiguedad" value="1a3">
+                            1–3 años
+                        </label>
+                        <label>
+                            <input type="radio" name="antiguedad" value="3a5">
+                            3–5 años
+                        </label>
+                        <label>
+                            <input type="radio" name="antiguedad" value="mas5">
+                            Más de 5 años
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="piloto">Pilotos *</label>
+                    <select id="piloto" name="piloto" required>
+                        <option value="">Selecciona un piloto...</option>
+                            <option value="ANT">Kimi Antonelli</option>
+                            <option value="LEC">Charles Leclerc</option>
+                            <option value="HAM">Lewis Hamilton</option>
+                            <option value="NOR">Lando Norris</option>
+                            <option value="PIA">Oscar Piastri</option>
+                            <option value="VER">Max Verstappen</option>
+                            <option value="HAD">Isack Hadjar</option>
+                            <option value="LAW">Liam Lawson</option>
+                            <option value="LIN">Arvid Lindblad</option>
+                            <option value="GAS">Pierre Gasly</option>
+                            <option value="COL">Franco Colapinto</option>
+                            <option value="OCO">Esteban Ocon</option>
+                            <option value="BEA">Oliver Bearman</option>
+                            <option value="HUL">Nico Hulkenberg</option>
+                            <option value="BOR">Gabriel Bortoleto</option>
+                            <option value="SAI">Carlos Sainz</option>
+                            <option value="ALB">Alexander Albon</option>
+                            <option value="ALO">Fernando Alonso</option>
+                            <option value="STR">Lance Stroll</option>
+                            <option value="PER">Sergio Perez</option>
+                            <option value="BOT">Valtteri Bottas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="escuderia">Escuderias *</label>
+                    <select id="escuderia" name="escuderia" required>
+                        <option value="">Selecciona una escuderia...</option>
+                        <option value="MERCEDES">Mercedes</option>
+                        <option value="FERRARI">Ferrari</option>
+                        <option value="MCLAREN">McLaren</option>
+                        <option value="REDBULL">Red Bull Racing</option>
+                        <option value="RB">Racing Bulls</option>
+                        <option value="ALPINE">Alpine</option>
+                        <option value="HAAS">Haas F1 Team</option>
+                        <option value="AUDI">Audi</option>
+                        <option value="WILLIAMS">Williams</option>
+                        <option value="ASTONMARTIN">Aston Martin</option>
+                        <option value="CADILLAC">Cadillac</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="circuito">Circuitos F1 2026 *</label>
+                    <select id="circuito" name="circuito" required>
+                            <option value="">Selecciona un circuito...</option>
+                            <option value="MELBOURNE">Albert Park Circuit - Melbourne</option>
+                            <option value="SHANGHAI">Shanghai International Circuit - Shanghái</option>
+                            <option value="SUZUKA">Suzuka Circuit - Suzuka</option>
+                            <option value="BAHRAIN">Bahrain International Circuit - Sakhir</option>
+                            <option value="JEDDAH">Jeddah Corniche Circuit - Jeddah</option>
+                            <option value="MIAMI">Miami International Autodrome - Miami</option>
+                            <option value="MONTREAL">Circuit Gilles-Villeneuve - Montreal</option>
+                            <option value="MONACO">Circuit de Monaco - Mónaco</option>
+                            <option value="BARCELONA">Circuit de Barcelona-Catalunya - Barcelona</option>
+                            <option value="SPIELBERG">Red Bull Ring - Spielberg</option>
+                            <option value="SILVERSTONE">Silverstone Circuit - Silverstone</option>
+                            <option value="SPA">Circuit de Spa-Francorchamps - Spa</option>
+                            <option value="HUNGARORING">Hungaroring - Budapest</option>
+                            <option value="ZANDVOORT">Circuit Zandvoort - Zandvoort</option>
+                            <option value="MONZA">Autodromo Nazionale Monza - Monza</option>
+                            <option value="MADRID">Madring - Madrid</option>
+                            <option value="BAKU">Baku City Circuit - Bakú</option>
+                            <option value="SEPANG">Sepang International Circuit - Sepang</option>
+                            <option value="SINGAPORE">Marina Bay Street Circuit - Singapur</option>
+                            <option value="AUSTIN">Circuit of the Americas - Austin</option>
+                            <option value="MEXICO">Autódromo Hermanos Rodríguez - Ciudad de México</option>
+                            <option value="INTERLAGOS">Autódromo José Carlos Pace - São Paulo</option>
+                            <option value="LASVEGAS">Las Vegas Strip Circuit - Las Vegas</option>
+                            <option value="LUSAIL">Lusail International Circuit - Lusail</option>
+                            <option value="YASMARINA">Yas Marina Circuit - Abu Dhabi</option>                           
+                    </select>
+                </div>
+
+                <div>
+                    <label>Género</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="genero" value="masculino">
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="femenino">
+                            Femenino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="otro">
+                            Otro
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="noDeclarar" checked>
+                            Prefiero no decirlo
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>¿Qué te gusta más de la F1?</label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="gustos" value="carreras">
+                            Las carreras
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gustos" value="tecnologia">
+                            La tecnología
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gustos" value="pilotos">
+                            Los pilotos
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gustos" value="estrategia">
+                            La estrategia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gustos" value="velocidad">
+                            La velocidad
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gustos" value="autos">
+                            Los autos
+                        </label>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <!-- Términos y condiciones -->
+            <div>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los <a href="#">términos y condiciones</a> *
+                </label>
+            </div>
+
+            <!-- Botones -->
+            <div>
+                <button type="submit">Registrarse</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+        <p id="mensaje" style="display: none;">¡Gracias por registrarte! Ya tenemos tus datos.</p>
+    </div>
+
+            <footer class="footer">
+            <div class="footer-column">
+                <h3>Enlaces útiles</h3>
+                <p><a href="https://github.com/giltobias2010" target="_blank" rel="noopener">github.com/giltobias2010</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p><a href="mailto:tobiasgil2010@gmail.com">tobiasgil2010@gmail.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Pagina oficial</h3>
+                <p><a href="https://www.formula1.com/" target="_blank" rel="noopener">formula1.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Créditos</h3>
+                <p>©2026 Mi pagina Web</p>
+            </div>
+        </footer>
+
+<script>
+    var form = document.getElementById('registroForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        form.style.display = 'none';
+        document.getElementById('mensaje').style.display = 'block';
+    });
+</script>
+</body>
+</html>
